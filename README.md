@@ -35,13 +35,10 @@
 
 抽出ラベル：
 
-high_risk（重大なリスク）
-
-risk（一般的なリスク）
-
-hazard（危険性）
-
-state（身体状態・兆候）
+high_risk：非常に危険、非常に悪い結果、一刻も早く注目しなければならない危害や損害とその影響
+risk：危険、悪い結果、人やモノなどに対する危害や損害とその影響
+hazard：危険の原因になり得る「モノ」
+state：hazard が risk や high_risk に変わる「条件」、「状況・状態」、「きっかけ」、「原因」
 
 モデルサイズ：約1.1GB
 
@@ -56,11 +53,3 @@ Hugging Face：Tetsuo3003
 実際の医療診断や治療などの 臨床目的での直接使用は推奨されません。
 
 抽出された語句に基づく判断・対応は、必ず専門の医療従事者によって行ってください。
-
-## 💻 ローカル実行手順
-
-### 1. リポジトリをクローン
-
-```bash
-git clone https://github.com/yourname/ner-risk-streamlit-app.git
-cd ner-risk-streamlit-app
