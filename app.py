@@ -7,7 +7,7 @@ import torch.nn.functional as F
 @st.cache_resource
 def load_model():
     model_name = "Tetsuo3003/highrisk_medical_japanese"
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
+    tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=False)
     model = AutoModelForTokenClassification.from_pretrained(model_name)
     return tokenizer, model
 
