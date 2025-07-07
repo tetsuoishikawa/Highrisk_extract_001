@@ -79,11 +79,11 @@ def ner_predict(text):
 
 # --- Streamlit UI ---
 
-st.title("注目語抽出アプリ（highrisk_medical_japanese）")
+st.title("🩺ハイリスク抽出（highrisk_medical_japanese）")
 
-input_text = st.text_area("解析したい文章を入力してください", height=150)
+input_text = st.text_area("FTしたLLMで注目語を推論します。医療関連の文章を入力してください。", height=150)
 
-if st.button("推論する"):
+if st.button("推論開始"):
     if not input_text.strip():
         st.warning("文章を入力してください。")
     else:
